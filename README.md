@@ -7,6 +7,6 @@ Para poder trabajar ejecutar correctamente este proyecto, debes de instalar la b
 Base de datos desde el archivo .bak o mdf y luego cambiar la cadena de conexion en la clase "Conexion" si no posees 
 autenticacion de Windows.
 
-**Introduccion**
+**Introduccion:**
 Este proyecto no esta terminado aun, necesita algunas validaciones y falta trabajarlo en los estilos, esto debido al 
 poco tiempo que se trabajo en el.
