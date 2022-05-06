@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8188BC6D-1681-4366-9839-3001640E51C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>La_Pizarra_Puertas_y_Ventanas</RootNamespace>
+    <AssemblyName>La_Pizarra_Puertas_y_Ventanas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Conexion.cs" />
+    <Compile Include="Entrega_de_Pedidos\Actualizar_Orden_Produccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrega_de_Pedidos\Actualizar_Orden_Produccion.Designer.cs">
+      <DependentUpon>Actualizar_Orden_Produccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entrega_de_Pedidos\Consultar_Pedidos_Pendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrega_de_Pedidos\Consultar_Pedidos_Pendientes.Designer.cs">
+      <DependentUpon>Consultar_Pedidos_Pendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entrega_de_Pedidos\Devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrega_de_Pedidos\Devoluciones.Designer.cs">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entrega_de_Pedidos\Facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrega_de_Pedidos\Facturacion.Designer.cs">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\ActualizarOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\ActualizarOrdenCompra.Designer.cs">
+      <DependentUpon>ActualizarOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\ConsultarCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\ConsultarCompras.Designer.cs">
+      <DependentUpon>ConsultarCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Consultar_Orden_de_Produccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Consultar_Orden_de_Produccion.Designer.cs">
+      <DependentUpon>Consultar_Orden_de_Produccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Consultar_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Consultar_Proveedores.Designer.cs">
+      <DependentUpon>Consultar_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Consultar_Requerimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Consultar_Requerimientos.Designer.cs">
+      <DependentUpon>Consultar_Requerimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Nueva_Materia_Prima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Nueva_Materia_Prima.Designer.cs">
+      <DependentUpon>Nueva_Materia_Prima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\RealizarCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\RealizarCompra.Designer.cs">
+      <DependentUpon>RealizarCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Registrar_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Registrar_Compra.Designer.cs">
+      <DependentUpon>Registrar_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Consultar_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Compra\Consultar_Inventario.Designer.cs">
+      <DependentUpon>Consultar_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Actualizar_Detalle_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Actualizar_Detalle_Pedido.Designer.cs">
+      <DependentUpon>Actualizar_Detalle_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Consultar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Consultar_Pedido.Designer.cs">
+      <DependentUpon>Consultar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Consultar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Consultar_Cliente.Designer.cs">
+      <DependentUpon>Consultar_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Consultar_Requerimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Consultar_Requerimientos.Designer.cs">
+      <DependentUpon>Consultar_Requerimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\DetallesRequerimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\DetallesRequerimientos.Designer.cs">
+      <DependentUpon>DetallesRequerimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Detalle_Pedido_Pendiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Detalle_Pedido_Pendiente.Designer.cs">
+      <DependentUpon>Detalle_Pedido_Pendiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Informacion_de_Orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Informacion_de_Orden.Designer.cs">
+      <DependentUpon>Informacion_de_Orden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Nuevo_Requerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Nuevo_Requerimiento.Designer.cs">
+      <DependentUpon>Nuevo_Requerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Produccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Produccion.Designer.cs">
+      <DependentUpon>Produccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Registrar_Nuevo_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Registrar_Nuevo_Detalle.Designer.cs">
+      <DependentUpon>Registrar_Nuevo_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Registrar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Registrar_Pedido.Designer.cs">
+      <DependentUpon>Registrar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Registrar_Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Registrar_Devolucion.Designer.cs">
+      <DependentUpon>Registrar_Devolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Registrar_Orden_de_Produccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Registrar_Orden_de_Produccion.Designer.cs">
+      <DependentUpon>Registrar_Orden_de_Produccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Requerimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionar_Pedidos\Requerimientos.Designer.cs">
+      <DependentUpon>Requerimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reutilizables\Consultar_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reutilizables\Consultar_Inventario.Designer.cs">
+      <DependentUpon>Consultar_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reutilizables\Nuevo_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reutilizables\Nuevo_Proveedor.Designer.cs">
+      <DependentUpon>Nuevo_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reutilizables\Registrar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reutilizables\Registrar_Cliente.Designer.cs">
+      <DependentUpon>Registrar_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reutilizables\Registrar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reutilizables\Registrar_Pedido.Designer.cs">
+      <DependentUpon>Registrar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reutilizables\Registrar_Requerimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reutilizables\Registrar_Requerimientos.Designer.cs">
+      <DependentUpon>Registrar_Requerimientos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Entrega_de_Pedidos\Actualizar_Orden_Produccion.resx">
+      <DependentUpon>Actualizar_Orden_Produccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrega_de_Pedidos\Consultar_Pedidos_Pendientes.resx">
+      <DependentUpon>Consultar_Pedidos_Pendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrega_de_Pedidos\Devoluciones.resx">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrega_de_Pedidos\Facturacion.resx">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Compra\ActualizarOrdenCompra.resx">
+      <DependentUpon>ActualizarOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Compra\ConsultarCompras.resx">
+      <DependentUpon>ConsultarCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Compra\Consultar_Inventario.resx">
+      <DependentUpon>Consultar_Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Compra\Consultar_Proveedores.resx">
+      <DependentUpon>Consultar_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Compra\Nueva_Materia_Prima.resx">
+      <DependentUpon>Nueva_Materia_Prima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Compra\RealizarCompra.resx">
+      <DependentUpon>RealizarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Compra\Registrar_Compra.resx">
+      <DependentUpon>Registrar_Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Actualizar_Detalle_Pedido.resx">
+      <DependentUpon>Actualizar_Detalle_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Consultar_Cliente.resx">
+      <DependentUpon>Consultar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Consultar_Pedido.resx">
+      <DependentUpon>Consultar_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Consultar_Requerimientos.resx">
+      <DependentUpon>Consultar_Requerimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\DetallesRequerimientos.resx">
+      <DependentUpon>DetallesRequerimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Detalle_Pedido_Pendiente.resx">
+      <DependentUpon>Detalle_Pedido_Pendiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Informacion_de_Orden.resx">
+      <DependentUpon>Informacion_de_Orden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Nuevo_Requerimiento.resx">
+      <DependentUpon>Nuevo_Requerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Produccion.resx">
+      <DependentUpon>Produccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Registrar_Nuevo_Detalle.resx">
+      <DependentUpon>Registrar_Nuevo_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Registrar_Pedido.resx">
+      <DependentUpon>Registrar_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionar_Pedidos\Requerimientos.resx">
+      <DependentUpon>Requerimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reutilizables\Nuevo_Proveedor.resx">
+      <DependentUpon>Nuevo_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reutilizables\Registrar_Cliente.resx">
+      <DependentUpon>Registrar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Base de datos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
